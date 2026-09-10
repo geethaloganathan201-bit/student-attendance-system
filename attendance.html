@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +8,87 @@
 
 <body>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
+    <h1>Student Attendance System</h1>
 
-        <div class="logo">
-            🎓
-            <h2>Student Attendance</h2>
-            <p>Management System</p>
-        </div>
+    <h2>Mark Attendance</h2>
 
-        <nav>
-            <a href="dashboard.html">⌂ Dashboard</a>
-            <a href="students.html">♧ Students</a>
-            <a href="attendance.html">☑️ Mark Attendance</a>
-            <a href="reports.html">▣ Reports</a>
-            <a href="settings.html">⚙️ Settings</a>
-        </nav>
+    <p>Select the attendance status for each student.</p>
 
-        <a href="index.html" class="logout">⇥ Logout</a>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Status</th>
+        </tr>
 
-    </aside>
+        <tr>
+            <td>101</td>
+            <td>Student 1</td>
+            <td>
+                <select>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
 
+        <tr>
+            <td>102</td>
+            <td>Student 2</td>
+            <td>
+                <select>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
 
-    <!-- Main Content…
+        <tr>
+            <td>103</td>
+            <td>Student 3</td>
+            <td>
+                <select>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Student 4</td>
+            <td>
+                <select>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>105</td>
+            <td>Student 5</td>
+            <td>
+                <select>
+                    <option>Present</option>
+                    <option>Absent</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <button onclick="alert('Attendance saved successfully!')">
+        Save Attendance
+    </button>
+
+    <br><br>
+
+    <a href="index.html">Home</a><br>
+    <a href="dashboard.html">Dashboard</a><br>
+    <a href="students.html">Students</a><br>
+    <a href="reports.html">Reports</a>
+
+</body>
+</html>
