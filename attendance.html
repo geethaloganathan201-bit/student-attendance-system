@@ -1,33 +1,87 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Attendance</title>
-</head>
-<body>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head><body><!-- Sidebar -->
+<aside class="sidebar">
 
-    <h1>Student Attendance</h1>
+    <div class="logo">
+        🎓
+        <h2>Student Attendance</h2>
+        <p>Management System</p>
+    </div>
 
-    <label>Student Name:</label>
-    <input type="text" placeholder="Enter student name">
+    <nav>
+        <a href="#" id="dashboardBtn">⌂ Dashboard</a>
+        <a href="#" id="studentsBtn">♧ Students</a>
+        <a href="#" id="attendanceBtn">☑ Mark Attendance</a>
+        <a href="#" id="reportsBtn">▣ Reports</a>
+        <a href="settings.html">⚙ Settings</a>
+    </nav>
 
-    <br><br>
+    <a href="index.html" class="logout">⇥ Logout</a>
 
-    <label>Status:</label>
-    <select>
-        <option>Present</option>
-        <option>Absent</option>
-    </select>
+</aside>
 
-    <br><br>
 
-    <button>Mark Attendance</button>
+<!-- Main Content -->
+<main class="main-content">
 
-    <br><br>
+    <!-- Top Bar -->
+    <header class="topbar">
 
-    <a href="index.html">Home</a><br>
-    <a href="dashboard.html">Dashboard</a><br>
-    <a href="students.html">Students</a><br>
-    <a href="reports.html">Reports</a>
+        <button class="menu-button">☰</button>
 
-</body>
-</html>
+        <div class="teacher-info">
+            🔔
+            👩
+            <span>
+                <strong>Mrs. Kavya</strong><br>
+                Teacher
+            </span>
+        </div>
+
+    </header>
+
+
+    <!-- Page Heading -->
+    <section class="page-header">
+
+        <h1>Dashboard</h1>
+
+        <p>
+            Home &nbsp; › &nbsp; Dashboard
+        </p>
+
+    </section>
+
+
+    <!-- Dashboard Content -->
+    <section>
+
+        <h2>Welcome to Student Attendance Management System</h2>
+
+        <p>Use the options below to manage student attendance.</p>
+
+        <button id="studentsBtn">Students</button>
+
+        <button id="attendanceBtn">Mark Attendance</button>
+
+        <button id="reportsBtn">Reports</button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2026 Student Attendance Management System.
+        All rights reserved.
+    </footer>
+
+</main>
+
+
+<!-- JavaScript -->
+<script src="js/dashboard.js"></script>
+
+</body></html>
